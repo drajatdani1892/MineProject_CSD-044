@@ -17,4 +17,17 @@ body {
     font-family: 'Roboto',sans-serif;
     text-transform: uppercase;
     margin-right: 1.5em;
+    color: white !important;
+}
+
+.card-list{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 2em;
+    margin: 1em;
 }
