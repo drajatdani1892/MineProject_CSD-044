@@ -26,7 +26,9 @@ body {
     margin-left: 6em;
     margin-bottom: 20px;
     justify-content: space-between;
+    flex-direction: column;
 }
+
 
 .card-list{
     margin-top: 2em;
