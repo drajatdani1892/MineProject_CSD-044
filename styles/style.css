@@ -24,6 +24,7 @@ body {
     display: flex;
     align-items: center;
     margin-left: 6em;
+    margin-bottom: 20px;
     justify-content: space-between;
 }
 
@@ -41,4 +42,22 @@ body {
 
 .card:hover {
     transform: scale(0.9);
+}
+
+.row{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.bookmark-fill{
+    margin-top: 5em;
+    position: relative;
+    left: 1150px;
+}
+
+footer{
+    margin-top: 5em;
 }
