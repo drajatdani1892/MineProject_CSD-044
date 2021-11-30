@@ -23,10 +23,14 @@ body {
 .search-and-title{
     display: flex;
     align-items: center;
-    margin-left: 6em;
+    /* margin-left: 6em; */
     margin-bottom: 20px;
     justify-content: space-between;
     flex-direction: column;
+}
+
+    .title-page > #textBlog {
+    margin-left: -4em;
 }
 
 

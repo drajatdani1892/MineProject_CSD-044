@@ -2,12 +2,16 @@
     .search-and-title {
         margin-left: 2em !important;
     }
+
 }
 
 @media (min-width: 281px) and (max-width: 480px) {
     .search-and-title {
         margin-left: 4em !important;
     }
+            .title-page>#textHome {
+                margin-left: -5em !important;
+            }
 }
 
 @media (min-width: 576px) {
@@ -19,13 +23,16 @@
     .category-box>.form-control {
         width: 82%;
     }
+
+    .search-category-group {
+        margin-left: 6em !important;
+    }
 }
 
 
 @media (min-width: 768px) {
     .search-and-title {
         flex-direction: row;
-        margin-left: 6em !important;
     }
 
     .search-box select {
@@ -36,10 +43,27 @@
         width: 100%;
     }
 
+    .title-page>#textBlog {
+        margin-left: 5em !important;
+    }
+
+    .title-page>#textHome {
+        margin-left: 1.5em !important;
+    }
+
 }
 
 @media (min-width: 1200px) {
     .search-and-title {
         flex-direction: row;
     }
+
+    .title-page>#textBlog {
+        margin-left: 3em !important;
+    }
+
+    .title-page>#textHome {
+        margin-left: 3em !important;
+    }
+
 }
