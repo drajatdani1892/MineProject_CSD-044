@@ -20,6 +20,13 @@ body {
     color: white !important;
 }
 
+.search-and-title{
+    display: flex;
+    align-items: center;
+    margin-left: 6em;
+    justify-content: space-between;
+}
+
 .card-list{
     margin-top: 2em;
     display: flex;
@@ -30,4 +37,8 @@ body {
 .card {
     margin-top: 2em;
     margin: 1em;
+}
+
+.card:hover {
+    transform: scale(0.9);
 }
