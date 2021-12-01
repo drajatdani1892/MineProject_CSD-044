@@ -13,57 +13,75 @@ body {
     height: 10%;
 }
 
-.nav-link{
-    font-family: 'Roboto',sans-serif;
+.nav-link {
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     margin-right: 1.5em;
     color: white !important;
 }
 
-.search-and-title{
+.search-and-title {
     display: flex;
     align-items: center;
-    /* margin-left: 6em; */
     margin-bottom: 20px;
     justify-content: space-between;
     flex-direction: column;
+    transition: ease-in-out 1s;
 }
 
-    .title-page > #textBlog {
+
+.title-page>#textBlog {
     margin-left: -4em;
 }
+.title-page>#textDetailEvent {
+    margin-left: -3em;
+}
 
 
-.card-list{
+.card-list {
     margin-top: 2em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transition: ease-in-out 1s;
 }
 
 .card {
     margin-top: 2em;
     margin: 1em;
+    transition: ease-in-out 1s;
 }
 
 .card:hover {
     transform: scale(0.9);
 }
 
-.row{
+.detail-event-card {
     margin-top: 2em;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     margin-left: 50px;
+    align-items: center;
 }
 
-.bookmark-fill{
+footer {
     margin-top: 5em;
-    position: relative;
-    left: 1150px;
 }
 
-footer{
-    margin-top: 5em;
+.bookmark-fill {
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #2E4C6D;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

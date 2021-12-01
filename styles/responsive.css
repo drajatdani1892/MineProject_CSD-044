@@ -9,9 +9,10 @@
     .search-and-title {
         margin-left: 4em !important;
     }
-            .title-page>#textHome {
-                margin-left: -5em !important;
-            }
+
+    .title-page>#textHome {
+        margin-left: -5em !important;
+    }
 }
 
 @media (min-width: 576px) {
@@ -27,12 +28,19 @@
     .search-category-group {
         margin-left: 6em !important;
     }
+
+    .search-and-title {
+
+        transition: all 2s;
+    }
+
 }
 
 
 @media (min-width: 768px) {
     .search-and-title {
         flex-direction: row;
+        transition: all 2s;
     }
 
     .search-box select {
@@ -51,6 +59,18 @@
         margin-left: 1.5em !important;
     }
 
+    .title-page>#textDetailEvent {
+        margin-left: 3em;
+    }
+
+    .detail-event-card {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 50px;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -65,5 +85,6 @@
     .title-page>#textHome {
         margin-left: 3em !important;
     }
+
 
 }
