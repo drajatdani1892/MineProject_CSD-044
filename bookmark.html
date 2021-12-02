@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,6 +14,7 @@
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
 
     <title>Document</title>
 </head>
@@ -48,108 +49,118 @@
 
     </header>
     <div class="jumbotron jumbotron-fluid text-light" style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
-         url('./assets/image-1.jfif') center center/cover no-repeat; background-attachment: fixed;">
+     url('./assets/image-1.jfif') center center/cover no-repeat; background-attachment: fixed;">
         <div class="container">
             <h1 class="display-4">Fluid jumbotron</h1>
             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
             </p>
         </div>
     </div>
-
     <main>
         <div class="container">
+            <!-- <div class="row justify-content-between ml-md-5 mr-md-5 search-and-title-container"> -->
             <div class="search-and-title">
                 <div class="title-page">
-                    <h2 id="textBlog"><b>Blog</b></h2>
+                    <h2 id="textBookmark">Bookmark</h2>
+                </div>
+                <div class="form-row pr-5 search-category-group">
+                    <div class="col-md-5 mb-3 search-box">
+                        <label for="validationCustom04">Category</label>
+                        <select class="custom-select" id="validationCustom04" required>
+                            <option selected disabled value="">Select</option>
+                            <option>All</option>
+                            <option>Edm</option>
+                            <option>Pop</option>
+                            <option>Jazz</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3 category-box">
+                        <label for="validationCustom05">Search</label>
+                        <input type="text" class="form-control " id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card-list">
-                <!--content 1-->
-                <div class="card bg-dark text-white" style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
-                    url('./assets/image-2.jpeg') center center/cover no-repeat; width: 18rem;">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/image-2.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the
                             card's content.</p>
-                        <a href="detail-blog.html" class="btn btn-primary" style="background: #2E4C6D; border-radius: 5px;">Go
-                            somewhere</a>
+                        <a href="detail-event.html" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-                <!--content 2-->
-                <div class="card bg-dark text-white" style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
-                    url('./assets/image-2.jpeg') center center/cover no-repeat; width: 18rem;">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/image-2.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the
                             card's content.</p>
-                        <a href="detail-blog.html" class="btn btn-primary" style="background: #2E4C6D; border-radius: 5px;">Go
-                            somewhere</a>
+                        <a href="detail-event.html" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-                <!--content 3-->
-                <div class="card bg-dark text-white" style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
-                    url('./assets/image-2.jpeg') center center/cover no-repeat; width: 18rem;">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/image-2.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the
                             card's content.</p>
-                        <a href="detail-blog.html" class="btn btn-primary" style="background: #2E4C6D; border-radius: 5px;">Go
-                            somewhere</a>
+                        <a href="detail-event.html" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-                <!--content 4-->
-                <div class="card bg-dark text-white" style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
-                    url('./assets/image-2.jpeg') center center/cover no-repeat; width: 18rem;">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/image-2.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the
                             card's content.</p>
-                        <a href="detail-blog.html" class="btn btn-primary" style="background: #2E4C6D; border-radius: 5px;">Go
-                            somewhere</a>
+                        <a href="detail-event.html" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-                <!--content 5-->
-                <div class="card bg-dark text-white" style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
-                    url('./assets/image-2.jpeg') center center/cover no-repeat; width: 18rem;">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/image-2.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the
                             card's content.</p>
-                        <a href="detail-blog.html" class="btn btn-primary" style="background: #2E4C6D; border-radius: 5px;">Go
-                            somewhere</a>
+                        <a href="detail-event.html" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-                <!--content 6-->
-                <div class="card bg-dark text-white" style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
-                    url('./assets/image-2.jpeg') center center/cover no-repeat; width: 18rem;">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/image-2.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the
                             card's content.</p>
-                        <a href="detail-blog.html" class="btn btn-primary" style="background: #2E4C6D; border-radius: 5px;">Go
-                            somewhere</a>
+                        <a href="detail-event.html" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
-
     <footer>
         <p style="text-align: center;">Copyright &copy; Capstopne 2021 - CSD044</p>
     </footer>
+
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
