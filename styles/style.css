@@ -94,13 +94,14 @@ footer {
 
 .image-content-blog img {
     width: 30em;
+    margin: 1em;
 }
 
 .title-content-blog{
     display: flex;
     flex-direction: column;
     margin: 1em;
-    padding-left: 5.5em !important;
+    padding-left: 1em !important;
 }
 
 .title-content-blog h1{
@@ -110,5 +111,9 @@ footer {
 .title-content-blog h2{
     font-size: 1rem;
     color: #2E4C6D;
+}
+.text-content-blog{
+    text-align: left;
+    align-items: center;
 }
 

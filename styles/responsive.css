@@ -71,27 +71,11 @@
         margin-left: 50px;
     }
 
-    .title-content-blog {
-        /* padding-left: 18.5em !important; */
-    }
-
 }
 
-@media (min-width: 992px) and ((max-width: 992px)) {
-    .search-and-title {
-        flex-direction: row;
-    }
-
-    .title-page>#textBlog {
-        margin-left: 3em !important;
-    }
-
-    .title-page>#textHome {
-        margin-left: 3em !important;
-    }
-
+@media (min-width: 992px) {
     .title-content-blog {
-        padding-left: 18.5em !important;
+        padding-left: 12.5em !important;
     }
 
 }
