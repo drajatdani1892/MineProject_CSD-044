@@ -93,8 +93,9 @@ footer {
 }
 
 .image-content-blog img {
-    width: 30em;
+    width: 38em;
     margin: 1em;
+    margin-left: 9em;
 }
 
 .title-content-blog{
@@ -113,7 +114,12 @@ footer {
     color: #2E4C6D;
 }
 .text-content-blog{
-    text-align: left;
     align-items: center;
 }
+.text-content-blog p {
+    text-align: left;
+    padding-left: 14rem;
+    padding-right: 3rem;
+}
+
 
