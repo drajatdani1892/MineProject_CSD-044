@@ -33,7 +33,21 @@
         transition: all 2s;
     }
 
+    .title-content-blog {
+        padding-left: 0em !important;
+    }
+
+    .text-content-blog p {
+        padding-left: 0.5rem !important;
+        padding-right: 2rem !important;
+    }
+    .image-content-blog img {
+        width: 41em;
+        margin-left: 2em;
+    }
 }
+
+
 
 
 @media (min-width: 768px) {
@@ -74,6 +88,7 @@
         padding-left: 2.5rem;
         padding-right: 2rem;
     }
+
     .image-content-blog img {
         width: 41em;
         margin-left: 3em;
@@ -81,7 +96,7 @@
 
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .title-content-blog {
         padding-left: 8.5em !important;
     }
