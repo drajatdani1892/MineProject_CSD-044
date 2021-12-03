@@ -73,8 +73,8 @@ footer {
 .bookmark-fill {
     font-size: 18px;
     position: fixed;
-    bottom: 16px;
-    right: 16px;
+    bottom: 2em;
+    right: 2em;
     background-color: #2E4C6D;
     color: white;
     border: 0;
