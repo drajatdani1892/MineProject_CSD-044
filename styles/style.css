@@ -148,3 +148,9 @@ footer {
     margin-right: 2.5em;
 }
 
+
+.image-team img{
+    margin: auto;
+    max-width: 20em;
+}
+
