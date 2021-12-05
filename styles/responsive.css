@@ -1,17 +1,37 @@
 @media (max-width: 280px) {
     .search-and-title {
+        text-decoration: row;
         margin-left: 2em !important;
     }
 
+    .title-page>#textBlog {
+        margin-left: 2em !important;
+    }
+    
 }
 
-@media (min-width: 281px) and (max-width: 480px) {
+@media (min-width: 281px) and (max-width: 499px) {
     .search-and-title {
-        margin-left: 4em !important;
+        text-decoration: row;
+        margin-left: 0px !important;
     }
 
     .title-page>#textHome {
         margin-left: -5em !important;
+    }
+
+    .title-content-blog {
+        padding-left: 0px!important;
+    }
+
+    .title-page>#textBlog {
+        margin-left: 5em;
+    }
+}
+
+@media (min-width: 500px){
+    .title-page>#textBlog {
+        margin-left: 3.5em !important;
     }
 }
 
@@ -31,15 +51,20 @@
 
     .search-and-title {
         transition: all 2s;
+        text-decoration: row;
     }
 
-    .title-content-blog {
-        padding-left: 0em !important;
+    .title-content-blog h1 {
+        padding-left: 0.5px !important;
     }
 
     .text-content-blog p {
         padding-left: 0.5rem !important;
         padding-right: 2rem !important;
+    }
+
+    .title-page>#textBlog {
+        margin-left: 3.5em !important;
     }
 
     .image-content-blog img {
@@ -48,8 +73,6 @@
     }
     
 }
-
-
 
 
 @media (min-width: 768px) {
@@ -67,7 +90,7 @@
     }
 
     .title-page>#textBlog {
-        margin-left: 5em !important;
+        margin-left: 1.5em !important;
     }
 
     .title-page>#textHome {
@@ -75,7 +98,7 @@
     }
 
     .title-page>#textDetailEvent {
-        margin-left: 3em;
+        margin-left: auto;
     }
 
     .detail-event-card {
@@ -86,9 +109,14 @@
         margin-left: 50px;
     }
 
+    .title-content-blog {
+        padding-left: 2.5em !important;
+    }
+
     .text-content-blog p {
-        padding-left: 2.5rem;
-        padding-right: 2rem;
+        padding-left: 2.5rem !important;
+        padding-right: 2rem !important;
+        
     }
 
     .image-content-blog img {
@@ -117,8 +145,12 @@
 }
 
 @media (min-width: 992px) {
-    .title-content-blog {
-        padding-left: 8.5em !important;
+    .search-and-title {
+        flex-direction: row;
+    }
+
+    .title-content-blog{
+        padding-left: 9.5em !important
     }
 
     .text-content-blog p {
@@ -143,6 +175,10 @@
         margin-right: 7.5em;
     }
 
+    .title-page>#textBlog {
+        margin-left: 5em !important;
+    }
+
 }
 
 
@@ -160,11 +196,11 @@
     }
 
     .title-content-blog {
-        padding-left: 13.5em !important;
+        padding-left: 15.3rem !important;
     }
 
     .text-content-blog p {
-        padding-left: 15.5rem !important;
+        padding-left: 15.3rem !important;
         padding-right: 11.5rem !important;
     }
 
