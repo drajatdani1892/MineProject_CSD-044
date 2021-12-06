@@ -31,13 +31,28 @@ body {
 
 .title-page>#textBlog {
     margin-left: auto;
+    margin-bottom: 1em;
 }
 
 .title-page>#textDetailEvent {
     margin-left: auto;
+    margin-bottom: 1em;
 }
 
+.title-page>#textDetailBlog {
+    margin-left: auto;
+    margin-bottom: 1em;
+}
 
+.title-page>#textHome {
+    margin-left: auto;
+    margin-bottom: 1em;
+}
+
+.title-page>#textBookmark {
+    margin-left: auto;
+    margin-bottom: 1em;
+}
 .card-list {
     margin-top: 2em;
     display: flex;

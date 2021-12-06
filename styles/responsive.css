@@ -22,7 +22,7 @@
     }
 
     .title-page>#textBlog {
-        margin-left: 5em;
+        margin-left: 0em !important;
     }
 }
 
@@ -51,8 +51,12 @@
         text-decoration: row;
     }
 
-    .title-content-blog h1 {
-        padding-left: 0.5px !important;
+    .title-content-blog h1 h2 {
+        margin-left: -0.5rem !important;
+    }
+
+    .title-page>#textDetailBlog {
+        margin-left: 0.5em !important;
     }
 
     .text-content-blog p {
@@ -61,7 +65,15 @@
     }
 
     .title-page>#textBlog {
-        margin-left: 3.5em !important;
+        margin-left: 3.2em !important;
+    }
+
+    .title-page>#textBookmark {
+        margin-left: 3em !important;
+    }
+
+    .title-page>#textHome {
+        margin-left: 3em !important;
     }
 
     .image-content-blog img {
@@ -94,8 +106,16 @@
         margin-left: 1.5em !important;
     }
 
+    .title-page>#textBookmark {
+        margin-left: 1.5em !important;
+    }
+
     .title-page>#textDetailEvent {
         margin-left: auto;
+    }
+
+    .title-page>#textDetailBlog {
+        margin-left: 1.2em !important;
     }
 
     .detail-event-card {
@@ -138,7 +158,6 @@
         margin-right: 3.5em;
     }
 
-
 }
 
 @media (min-width: 992px) {
@@ -153,6 +172,14 @@
     .text-content-blog p {
         padding-left: 9.5rem !important;
         padding-right: 7.5rem !important;
+    }
+
+    .title-page>#textHome {
+        margin-left: 5em !important;
+    }
+
+    .title-page>#textBookmark {
+        margin-left: 5em !important;
     }
 
     .box-comment {
@@ -189,6 +216,10 @@
     }
 
     .title-page>#textHome {
+        margin-left: 3em !important;
+    }
+
+    .title-page>#textBookmark {
         margin-left: 3em !important;
     }
 
