@@ -11,13 +11,10 @@
 }
 
 @media (min-width: 281px) and (max-width: 499px) {
-    .search-and-title {
-        text-decoration: row;
-        margin-left: 0px !important;
-    }
+
 
     .title-page>#textHome {
-        margin-left: -5em !important;
+        margin-left: 0em !important;
     }
 
     .title-content-blog {
