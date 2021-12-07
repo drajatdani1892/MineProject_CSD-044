@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 /* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -37,17 +38,17 @@ module.exports = {
     rules: [
       {
         test: '/\.html$/',
-        loader: 'prerender-loader?string'
+        loader: 'prerender-loader?string',
       },
       {
-      test: /\.css$/,
-      use: [{
-        loader: 'style-loader',
-      },
-      {
-        loader: 'css-loader',
+        test: /\.css$/,
+        use: [{
+          loader: 'style-loader',
         },
-      ],
+        {
+          loader: 'css-loader',
+        },
+        ],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -58,7 +59,6 @@ module.exports = {
       },
     ],
 
-    
   },
   plugins: [
     new HtmlWebpackPlugin({
