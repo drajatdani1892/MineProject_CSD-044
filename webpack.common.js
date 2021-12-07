@@ -1,8 +1,10 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable import/no-extraneous-dependencies */
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest');
 
 module.exports = {
 
@@ -70,6 +72,41 @@ module.exports = {
         from: path.resolve(__dirname, 'src/public/'),
         to: path.resolve(__dirname, 'dist/'),
       }],
+    }),
+    new WebpackPwaManifest({
+      name: 'Mine - Application',
+      short_name: 'Mine Lite',
+      description: 'Find Your Music Event',
+      background_color: '#2E4C6D',
+      crossorigin: 'use-credentials', // can be null, use-credentials or anonymous
+      icons: [
+        {
+          src: path.resolve('src/public/images/favicon.svg'),
+          sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
+        },
+        {
+          src: path.resolve('src/public/images/favicon.svg'),
+          size: '1024x1024',
+          purpose: 'maskable',
+        },
+        {
+          src: path.resolve('src/public/images/favicon.svg'),
+          sizes: [120, 152, 167, 180, 1024],
+          destination: path.join('icons', 'ios'),
+          ios: true,
+        },
+        {
+          src: path.resolve('src/public/images/favicon.svg'),
+          size: 1024,
+          destination: path.join('icons', 'ios'),
+          ios: 'startup',
+        },
+        {
+          src: path.resolve('src/public/images/favicon.svg'),
+          sizes: [36, 48, 72, 96, 144, 192, 512],
+          destination: path.join('icons', 'android'),
+        },
+      ],
     }),
   ],
 };
