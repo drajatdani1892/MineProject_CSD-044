@@ -1,7 +1,10 @@
 import CONFIG from './config';
 
 const API_ENDPOINT = {
+  // HOME: `${CONFIG.BASE_URL}events.json?classificationName=music&apikey=${CONFIG.KEY}&size=10`,
   HOME: `${CONFIG.BASE_URL}musicEvent`,
+  BLOG: `${CONFIG.BASE_URL}blogcontent`,
+  DETAILBLOG: (id) => `${CONFIG.BASE_URL}blogcontent/${id}`,
   DETAILHOME: (id) => `${CONFIG.BASE_URL}musicEvent/${id}`,
 };
 
