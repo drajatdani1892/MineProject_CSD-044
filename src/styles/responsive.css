@@ -157,6 +157,10 @@
     #button-blog {
         margin-right: 3.5em;
     }
+     .jumbotron {
+         background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+             url('/images/image-3-medium.jpg') center center/cover no-repeat;
+     }
 
 }
 
@@ -247,5 +251,12 @@
 
     #button-blog {
         margin-right: 13em;
+    }
+
+    .jumbotron{
+        background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+        url('/images/image-3.jpg') center center/cover no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+        url('/images/image-3.webp') center center/cover no-repeat;
     }
 }

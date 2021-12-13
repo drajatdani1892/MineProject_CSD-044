@@ -57,7 +57,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|jfif)$/i,
         loader: 'file-loader',
         options: {
           name: '[path][name].[ext]',
@@ -112,9 +112,6 @@ module.exports = {
         },
       ],
     }),
-    new ServiceWorkerWebpackPlugin({
-      entry: path.resolve(__dirname, 'src/scripts/sw.js'),
-    }),
     new ImageminWebpackPlugin({
       plugins: [
         ImageminMozjpeg({
@@ -122,6 +119,9 @@ module.exports = {
           progressive: true,
         }),
       ],
+    }),
+    new ServiceWorkerWebpackPlugin({
+      entry: path.resolve(__dirname, 'src/scripts/sw.js'),
     }),
     new BundleAnalyzerPlugin(),
   ],
