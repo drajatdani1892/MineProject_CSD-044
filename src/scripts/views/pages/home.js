@@ -38,6 +38,7 @@ const Home = {
 
   async afterRender() {
     const homepages = await TheEventDbSource.Home();
+    console.log(homepages);
     const eventContainer = document.querySelector('.card-list');
     homepages.forEach((events) => {
       eventContainer.innerHTML += createEventItemTemplate(events);

@@ -58,9 +58,71 @@ const createEventDetailTemplate = (event) => `
                                     </div>
                                 </div>
                             </div>`;
+
+const createAboutUsTemplate = () => `
+                                      <div class="row about-web mb-5">
+                    <div class="col-12 col-md-5 image-detail-event">
+                        <img src="../images/image-2.jpeg" class="card-img-top img-fluid" tabindex="0" alt="...">
+                    </div>
+                    <div class="col-12 col-md-7 description-detail-event">
+                        <div class="card-body" tabindex="0">
+                            <h2 class="card-title">Tentang Web</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Minus, minima ipsa. Fuga nulla, sequi dignissimos facere
+                                ducimus, corrupti omnis velit aliquid molestias tenetur vitae nemo ullam voluptates
+                                delectus
+                                perspiciatis similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                                sunt
+                                illo tempora, necessitatibus, consequuntur quam ab iure praesentium nisi rem reiciendis.
+                                Quisquam dolore repudiandae veritatis facilis sit aliquam deleniti architecto.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="title-page mb-5">
+                    <h2 id="textAboutUs" class="d-flex justify-content-center" tabindex="0">Fitur</h2>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 justify-content-center" style="width: auto;">
+                    <div class="col mb-4" tabindex="0">
+                        <div class="card h-100">
+                            <img src="../assets/image-2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4" tabindex="0">
+                        <div class="card h-100">
+                            <img src="../assets/image-2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a short card.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-md-3 d-flex align-items-center">
+                        <div class="title-page mb-5">
+                            <h1 id="TextOurteam" tabindex="0">Our Team</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9" style="width: 18rem;">
+                        <div class="image-team d-flex flex-column flex-lg-row  ">
+                            <img src="../assets/image-2.jpeg" alt="..." class="rounded mb-5 mb-md-2" tabindex="0">
+                            <img src="../assets/image-2.jpeg" alt="..." class="rounded mb-5 mb-md-2" tabindex="0">
+                        </div>
+                    </div>
+                </div>`;
 export {
   createEventItemTemplate,
   createBlogItemTemplate,
   createBlogDetailTemplate,
   createEventDetailTemplate,
+  createAboutUsTemplate,
 };
