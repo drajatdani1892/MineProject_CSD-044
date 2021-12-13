@@ -1,6 +1,6 @@
 const createEventItemTemplate = (events) => `
         <div class="card" style="width: 18rem;" tabindex="0">
-                    <img src="${events.images}" class="card-img-top" alt="...">
+                    <img src="${events.images}" class="card-img-top lazyload" alt="${events.eventName}">
                     <div class="card-body">
                         <h5 class="card-title">${events.eventName}</h5>
                         <p class="card-text" style="overflow: hidden;
@@ -12,7 +12,7 @@ const createEventItemTemplate = (events) => `
                     </div>
                 </div>`;
 
-const createBlogItemTemplate = (blogs) => ` <div class="card bg-dark text-white" style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
+const createBlogItemTemplate = (blogs) => ` <div class="card bg-dark text-white lazyload" style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
                     url('${blogs.images}') center center/cover no-repeat; width: 18rem;" tabindex="0">
                     <div class="card-body" tabindex="0">
                         <h5 class="card-title">${blogs.title}</h5>
@@ -33,7 +33,7 @@ const createBlogDetailTemplate = (blog) => `  <div class="contentblog-item">
                         <h2>${blog.createdAt}</h2>
                     </div>
                     <div class="image-content-blog">
-                        <img src="${blog.images}" class="img-fluid" tabindex="0" alt="">
+                        <img src="${blog.images}" class="img-fluid lazyload" tabindex="0" alt="">
                     </div>
                     <div class="text-content-blog" tabindex="0">
                         <p>${blog.content}</p>
@@ -43,7 +43,7 @@ const createBlogDetailTemplate = (blog) => `  <div class="contentblog-item">
 const createEventDetailTemplate = (event) => `
                          <div class="row detail-event-card">
                                 <div class="col-12 col-md-5 image-detail-event">
-                                    <img src="${event.images}" class="card-img-top img-fluid" tabindex="0" alt="...">
+                                    <img src="${event.images}" class="card-img-top img-fluid lazyload" tabindex="0" alt="${event.eventName}">
                                 </div>
                                 <div class="col-12 col-md-7 description-detail-event">
                                     <div class="card-body" tabindex="0">
@@ -62,7 +62,7 @@ const createEventDetailTemplate = (event) => `
 const createAboutUsTemplate = () => `
                                       <div class="row about-web mb-5">
                     <div class="col-12 col-md-5 image-detail-event">
-                        <img src="../images/image-2.jpeg" class="card-img-top img-fluid" tabindex="0" alt="...">
+                        <img src="../images/image-2.jpeg" class="card-img-top img-fluid lazyload" tabindex="0" alt="...">
                     </div>
                     <div class="col-12 col-md-7 description-detail-event">
                         <div class="card-body" tabindex="0">
@@ -86,7 +86,7 @@ const createAboutUsTemplate = () => `
                 <div class="row row-cols-1 row-cols-md-2 justify-content-center" style="width: auto;">
                     <div class="col mb-4" tabindex="0">
                         <div class="card h-100">
-                            <img src="../assets/image-2.jpeg" class="card-img-top" alt="...">
+                            <img src="../assets/image-2.jpeg" class="card-img-top lazyload" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">This is a longer card with supporting text below as a natural
@@ -97,7 +97,7 @@ const createAboutUsTemplate = () => `
                     </div>
                     <div class="col mb-4" tabindex="0">
                         <div class="card h-100">
-                            <img src="../assets/image-2.jpeg" class="card-img-top" alt="...">
+                            <img src="../assets/image-2.jpeg" class="card-img-top lazyload" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">This is a short card.</p>
@@ -114,8 +114,8 @@ const createAboutUsTemplate = () => `
                     </div>
                     <div class="col-12 col-md-9" style="width: 18rem;">
                         <div class="image-team d-flex flex-column flex-lg-row  ">
-                            <img src="../assets/image-2.jpeg" alt="..." class="rounded mb-5 mb-md-2" tabindex="0">
-                            <img src="../assets/image-2.jpeg" alt="..." class="rounded mb-5 mb-md-2" tabindex="0">
+                            <img src="../assets/image-2.jpeg" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0">
+                            <img src="../assets/image-2.jpeg" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0">
                         </div>
                     </div>
                 </div>`;
