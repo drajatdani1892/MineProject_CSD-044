@@ -3,7 +3,7 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import '../styles/responsive.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@iconify/iconify';
 import App from './views/app';

@@ -1,6 +1,7 @@
 import UrlParser from '../../routes/url-parser';
 import TheEventDbSource from '../../data/theeventdb-source';
-import { createEventDetailTemplate } from '../templates/template-creator';
+import { createEventDetailTemplate, createLikeButtonTemplate } from '../templates/template-creator';
+import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const DetailHome = {
   async render() {
@@ -11,7 +12,8 @@ const DetailHome = {
                     <h2 id="textDetailEvent" tabindex="0">Detail</h2>
                 </div>
             </div>
-            <div class="detail-event-container"></div>
+            <div class="detail-event-container"></div>      
+             <div id="bookmarkButtonContainer"></div>      
       </div>
     `;
   },
@@ -22,6 +24,19 @@ const DetailHome = {
     console.log(event);
     const eventContainer = document.querySelector('.detail-event-container');
     eventContainer.innerHTML = createEventDetailTemplate(event);
+
+    const bookmarkButtonContainer = document.querySelector('#bookmarkButtonContainer');
+    bookmarkButtonContainer.innerHTML = createLikeButtonTemplate();
+
+    LikeButtonInitiator.init({
+      likeButtonContainer: document.querySelector('#bookmarkButtonContainer'),
+      event: {
+        id: event.id,
+        eventName: event.eventName,
+        deskripsi: event.deskripsi,
+        images: event.images,
+      },
+    });
   },
 };
 

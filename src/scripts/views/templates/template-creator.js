@@ -119,7 +119,20 @@ const createAboutUsTemplate = () => `
                         </div>
                     </div>
                 </div>`;
+const createLikeButtonTemplate = () => `
+  <button aria-label="like this event" id="likeButton" class="bookmark-fill">
+    <span class="iconify" data-icon="bi:bookmark" style="color: white;"></span>
+  </button>
+`;
+
+const createLikedButtonTemplate = () => `
+  <button aria-label="unlike this event" id="likeButton" class="bookmark-fill">
+    <span class="iconify" data-icon="bx:bxs-bookmark" style="color: white;"></span>
+  </button>
+`;
 export {
+  createLikeButtonTemplate,
+  createLikedButtonTemplate,
   createEventItemTemplate,
   createBlogItemTemplate,
   createBlogDetailTemplate,

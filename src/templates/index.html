@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    
+
 
     <title>Document</title>
 </head>
@@ -19,12 +19,14 @@
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#2E4C6D">
             <div class="container" tabindex="0">
                 <a class="navbar-brand" href="#">
-                <picture>
-                       <source type="image/webp" data-srcset="/images/icon.webp">
-                       <source type="image/png" data-srcset="/images/icon.png">
-                        <img data-src="/images/icon.png" class="img-fluid lazyload" alt="">
-                </picture>
-            </a>
+                    <picture>
+                        <source data-srcset="./images/icon.webp">
+                        <!-- <source media="(max-width: 992px)" data-srcset="./images/icon-medium.jpg">
+                        <source data-srcset="./images/icon.webp">
+                        <source data-srcset="./images/icon.jpg"> -->
+                        <img class="lazyload" data-src="./images/icon.png" alt="icon">
+                    </picture>
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" tabindex="0">
                     <span class="navbar-toggler-icon"></span>
@@ -35,7 +37,7 @@
                             <a class="nav-link" href="#/home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="bookmark.html">Bookmark</a>
+                            <a class="nav-link" href="#/bookmark">Bookmark</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#/blog">Blog</a>
@@ -51,12 +53,12 @@
     </header>
     <div class="lazyload jumbotron jumbotron-fluid text-light" style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
      url('/images/image-3-small.jpg') center center/cover no-repeat; background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-            url('/images/image-3.webp') center center/cover no-repeat; background-attachment: fixed; width: 100% !important;">
+            url('/images/image-3.webp') center center/cover no-repeat;">
         <div class="container justify-content-center">
             <h1 class="display-4">Find Your Event</h1>
             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
             </p>
-             <a class="btn btn-primary btn-lg" href="#" role="button" tabindex="0">Go To Down</a>
+            <a class="btn btn-primary btn-lg" href="#" role="button" tabindex="0">Go To Down</a>
         </div>
     </div>
     <main id="mainContent" class="container">
@@ -65,7 +67,7 @@
     <footer>
         <p style="text-align: center;">Copyright &copy; Capstopne 2021 - CSD044</p>
     </footer>
-    
+
 </body>
 
 </html>
