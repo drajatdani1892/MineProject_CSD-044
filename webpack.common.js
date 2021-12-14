@@ -9,6 +9,7 @@ const ServiceWorkerWebpackPlugin = require('serviceworker-webpack-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const ImageminMozjpeg = require('imagemin-mozjpeg');
+const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 
 module.exports = {
 
@@ -75,6 +76,9 @@ module.exports = {
       patterns: [{
         from: path.resolve(__dirname, 'src/public/'),
         to: path.resolve(__dirname, 'dist/'),
+        globOptions: {
+          ignore: ['/images/**'], // CopyWebpackPlugin mengabaikan berkas yang berada di dalam folder images
+        },
       }],
     }),
     new WebpackPwaManifest({
@@ -124,5 +128,16 @@ module.exports = {
       entry: path.resolve(__dirname, 'src/scripts/sw.js'),
     }),
     new BundleAnalyzerPlugin(),
+    new ImageminWebpWebpackPlugin({
+      config: [
+        {
+          test: /\.(jpe?g|png)/,
+          options: {
+            quality: 50,
+          },
+        },
+      ],
+      overrideExtension: true,
+    }),
   ],
 };

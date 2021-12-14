@@ -18,7 +18,13 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#2E4C6D">
             <div class="container" tabindex="0">
-                <a class="navbar-brand" href="#"><img src="/images/icon.svg" class="img-fluid" alt=""></a>
+                <a class="navbar-brand" href="#">
+                <picture>
+                       <source type="image/webp" data-srcset="/images/icon.webp">
+                       <source type="image/png" data-srcset="/images/icon.png">
+                        <img data-src="/images/icon.png" class="img-fluid lazyload" alt="">
+                </picture>
+            </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" tabindex="0">
                     <span class="navbar-toggler-icon"></span>
@@ -43,8 +49,9 @@
         </nav>
 
     </header>
-    <div class="jumbotron jumbotron-fluid text-light lazyload" style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
-     url('images/image-3-small.jpg') center center/cover no-repeat; background-attachment: fixed; width: 100% !important;">
+    <div class="lazyload jumbotron jumbotron-fluid text-light" style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
+     url('/images/image-3-small.jpg') center center/cover no-repeat; background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+            url('/images/image-3.webp') center center/cover no-repeat; background-attachment: fixed; width: 100% !important;">
         <div class="container justify-content-center">
             <h1 class="display-4">Find Your Event</h1>
             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.

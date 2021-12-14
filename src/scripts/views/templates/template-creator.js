@@ -42,10 +42,10 @@ const createBlogDetailTemplate = (blog) => `  <div class="contentblog-item">
 ;
 const createEventDetailTemplate = (event) => `
                          <div class="row detail-event-card">
-                                <div class="col-12 col-md-5 image-detail-event">
+                                <div class="col-12 col-lg-5 image-detail-event">
                                     <img src="${event.images}" class="card-img-top img-fluid lazyload" tabindex="0" alt="${event.eventName}">
                                 </div>
-                                <div class="col-12 col-md-7 description-detail-event">
+                                <div class="col-12 col-lg-7 description-detail-event">
                                     <div class="card-body" tabindex="0">
                                         <h2 class="card-title">${event.eventName}</h2>
                                         <p class="card-text" styles="overflow: hidden;
