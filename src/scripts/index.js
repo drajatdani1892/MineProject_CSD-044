@@ -6,6 +6,7 @@ import '../styles/responsive.css';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@iconify/iconify';
+import Swal from 'sweetalert2';
 import App from './views/app';
 import swRegister from './utils/sw-register';
 import 'lazysizes';
@@ -22,4 +23,13 @@ window.addEventListener('hashchange', () => {
 window.addEventListener('load', () => {
   app.renderPage();
   swRegister();
+});
+
+window.addEventListener('offline', () => {
+  Swal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'Your Internet is Offline!',
+    footer: '<a href="">Why do I have this issue?</a>',
+  });
 });
