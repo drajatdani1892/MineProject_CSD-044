@@ -62,7 +62,7 @@ const createEventDetailTemplate = (event) => `
 const createAboutUsTemplate = () => `
                                       <div class="row about-web mb-5">
                     <div class="col-12 col-md-5 image-detail-event">
-                        <img src="../images/tentang-web.jpeg" class="card-img-top img-fluid lazyload" tabindex="0" alt="...">
+                         <img src="../images/tentang-web.jpeg" class="card-img-top img-fluid lazyload" tabindex="0" alt="...">
                     </div>
                     <div class="col-12 col-md-7 description-detail-event">
                         <div class="card-body" tabindex="0">
@@ -79,10 +79,10 @@ const createAboutUsTemplate = () => `
                 <div class="title-page mb-5">
                     <h2 id="textAboutUs" class="d-flex justify-content-center" tabindex="0">Fitur</h2>
                 </div>
-                <div class="row row-cols-1 row-cols-md-2 justify-content-center" style="width: auto;">
+               <div class="row row-cols-1 row-cols-md-2 justify-content-center" style="width: auto;">
                     <div class="col mb-4" tabindex="0">
-                        <div class="card h-100">
-                            <img src="../assets/image-2.jpeg" class="card-img-top lazyload" alt="...">
+                        <div class="card h-100" style="max-width:30em">
+                            <img src="/images/image-2.jpeg" class="card-img-top lazyload" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">This is a longer card with supporting text below as a natural
@@ -92,8 +92,8 @@ const createAboutUsTemplate = () => `
                         </div>
                     </div>
                     <div class="col mb-4" tabindex="0">
-                        <div class="card h-100">
-                            <img src="../assets/image-2.jpeg" class="card-img-top lazyload" alt="...">
+                        <div class="card h-100" style="max-width:30em">
+                             <img src="/images/image-2.jpeg" class="card-img-top lazyload" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">This is a short card.</p>

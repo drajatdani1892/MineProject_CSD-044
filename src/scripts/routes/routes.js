@@ -13,6 +13,7 @@ const routes = {
   '/detail-blog/:id': DetailBlog,
   '/bookmark': Bookmark,
   '/about-us': AboutUs,
+  '/home/:artist': HomePage,
 };
 
 export default routes;
