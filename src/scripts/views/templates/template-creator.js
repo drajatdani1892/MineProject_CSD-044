@@ -62,20 +62,16 @@ const createEventDetailTemplate = (event) => `
 const createAboutUsTemplate = () => `
                                       <div class="row about-web mb-5">
                     <div class="col-12 col-md-5 image-detail-event">
-                        <img src="../images/image-2.jpeg" class="card-img-top img-fluid lazyload" tabindex="0" alt="...">
+                        <img src="../images/tentang-web.jpeg" class="card-img-top img-fluid lazyload" tabindex="0" alt="...">
                     </div>
                     <div class="col-12 col-md-7 description-detail-event">
                         <div class="card-body" tabindex="0">
                             <h2 class="card-title">Tentang Web</h2>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer. Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Minus, minima ipsa. Fuga nulla, sequi dignissimos facere
-                                ducimus, corrupti omnis velit aliquid molestias tenetur vitae nemo ullam voluptates
-                                delectus
-                                perspiciatis similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                                sunt
-                                illo tempora, necessitatibus, consequuntur quam ab iure praesentium nisi rem reiciendis.
-                                Quisquam dolore repudiandae veritatis facilis sit aliquam deleniti architecto.</p>
+                            <p class="card-text">MINE (Music Information Event) merupakan platform di bidang esensial
+                            khususnya pada industri musik. Website ini tersedia untuk para penikmat musik yang merindukan
+                            suasana live musik sehingga memiliki interaksi antara penikmat musik dengan industri musik tersebut.
+                            Pada platform ini menyediakan beberapa fitur dan salah satunya menyediakan informasi seputar 
+                            konser musik online secara akurat.</p>
                         </div>
                     </div>
                 </div>
