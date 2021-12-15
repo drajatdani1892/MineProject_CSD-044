@@ -110,8 +110,8 @@ const createAboutUsTemplate = () => `
                     </div>
                     <div class="col-12 col-md-9" style="width: 18rem;">
                         <div class="image-team d-flex flex-column flex-lg-row  ">
-                            <img src="../assets/image-2.jpeg" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0">
-                            <img src="../assets/image-2.jpeg" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0">
+                            <img src="../images/zahra.png" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
+                            <img src="../images/zahra.png" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
                         </div>
                     </div>
                 </div>`;
