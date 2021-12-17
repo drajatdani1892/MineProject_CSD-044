@@ -107,7 +107,6 @@ const createAboutUsTemplate = () => `
                                 <h2 class="mx-auto mt-3">Bookmark Event</h2>
                         </div>
                 </div>
-
                 <hr>
                 <div class="row">
                     <div class="col-12 col-md-3 d-flex align-items-center">
@@ -115,17 +114,20 @@ const createAboutUsTemplate = () => `
                             <h1 id="TextOurteam" tabindex="0">Our Team</h1>
                         </div>
                     </div>
-
-                    <div class="row row-cols-1 row-cols-md-2 justify-content-around" style="width: auto;">
-                        <div class="col-12 d-flex flex-column justify-content-center col-md-5 col-12 col-md-5 mb-5 mb-md-0 ml-lg-2">
-                            <img data-src="../images/zahra.png" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
-                            <p class="mx-auto mt-3"><b>Zahra Elgysha N</b></p>
+                    <div class="row row-cols-1 row-cols-md-2 justify-content-around ml-lg-5" style="width: auto;">
+                        <div class="col-12 d-flex flex-column justify-content-center col-md-5 col-12 col-md-5 mb-5 mb-md-0 mx-auto">
+                        <div class="image-2 rounded d-flex justify-content-center"> 
+                            <img data-src="../images/zahra.png" alt="..." class="rounded mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
+                        </div>    
+                            <h5 class="text-name-1 mx-auto mt-3">Zahra Elgysha N</h5>
                         </div>
-                        <div class="col-12 d-flex flex-column justify-content-center col-md-5 col-12 col-md-5 mb-5 mb-md-0 ml-lg-2">
-                            <img data-src="../images/drajat.jpeg" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
-                            <p class="mx-auto mt-3"><b>Muhammad Drajat R</b></p>
+                        <div class="col-12 d-flex flex-column justify-content-center col-md-5 col-12 col-md-5 mb-5 mb-md-0">
+                            <div class="image-2 rounded d-flex justify-content-center"> 
+                                <img data-src="../images/drajat.jpeg" alt="..." class="rounded mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
+                            </div>
+                            <h5 class="text-name-2 mx-auto mt-3">Muhammad Drajat R</h5>
                         </div>
-                </div>
+                    </div>
                 </div>`;
 const createLikeButtonTemplate = () => `
   <button aria-label="like this event" id="likeButton" class="bookmark-fill">
