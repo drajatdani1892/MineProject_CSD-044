@@ -115,12 +115,17 @@ const createAboutUsTemplate = () => `
                             <h1 id="TextOurteam" tabindex="0">Our Team</h1>
                         </div>
                     </div>
-                    <div class="col-12 col-md-9" style="width: 18rem;">
-                        <div class="image-team d-flex flex-column flex-lg-row  ">
+
+                    <div class="row row-cols-1 row-cols-md-2 justify-content-around" style="width: auto;">
+                        <div class="col-12 d-flex flex-column justify-content-center col-md-5 col-12 col-md-5 mb-5 mb-md-0 ml-lg-2">
                             <img data-src="../images/zahra.png" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
-                            <img data-src="../images/zahra.png" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
+                            <p class="mx-auto mt-3"><b>Zahra Elgysha N</b></p>
                         </div>
-                    </div>
+                        <div class="col-12 d-flex flex-column justify-content-center col-md-5 col-12 col-md-5 mb-5 mb-md-0 ml-lg-2">
+                            <img data-src="../images/drajat.jpeg" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
+                            <p class="mx-auto mt-3"><b>Muhammad Drajat R</b></p>
+                        </div>
+                </div>
                 </div>`;
 const createLikeButtonTemplate = () => `
   <button aria-label="like this event" id="likeButton" class="bookmark-fill">
