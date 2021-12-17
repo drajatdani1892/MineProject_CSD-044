@@ -67,17 +67,13 @@ const createAboutUsTemplate = () => `
                     <div class="col-12 col-md-7 description-detail-event">
                         <div class="card-body" tabindex="0">
                             <h2 class="card-title">Tentang Web</h2>
-                            <p class="card-text">MINE (Music Information Event) merupakan platform di bidang esensial
-                            khususnya pada industri musik. Website ini tersedia untuk para penikmat musik yang merindukan
-                            suasana live musik sehingga memiliki interaksi antara penikmat musik dengan industri musik tersebut.
-                            Pada platform ini menyediakan beberapa fitur dan salah satunya menyediakan informasi seputar 
-                            konser musik online secara akurat.</p>
+                            <p class="card-text">MINE (Music Information Event) merupakan platform non-profit pada industri music yang memiliki latar belakang untuk mendukung bergeraknya kembali industri musik yang sempat mati suri pada masa pandemi covid-19 ini. Website ini tersedia untuk para penikmat event musik yang merindukan suasana live musik sehingga memiliki interaksi antara penikmat musik dengan pegiat industri musik tersebut. Pada platform ini kami menyediakan beberapa fitur dan salah satunya menyediakan informasi seputar konser musik online secara akurat, selain itu anda bisa menggunakan fitur bookmark untuk menyimpan event yang anda mau, dan juga menggunakan fitur blog untuk membaca dan mendapatkan informasi terbaru tentang event musik yang akan diselenggarakan.</p>
                         </div>
                     </div>
                 </div>
                 <hr>
                 <div class="title-page mb-5">
-                    <h2 id="textAboutUs" class="d-flex justify-content-center" tabindex="0">Fitur</h2>
+                    <h1 id="textAboutUs" class="d-flex justify-content-center" tabindex="0">Fitur</h1>
                 </div>
                 <div class="row row-cols-1 row-cols-md-2 justify-content-around" style="width: auto;">
                         <div class="col-12 d-flex flex-column justify-content-center col-md-5 col-12 col-md-5 mb-5 mb-md-0">
@@ -91,7 +87,7 @@ const createAboutUsTemplate = () => `
                                     <span class="iconify" data-icon="uil:search" data-width="100" data-height="100">
                                     </span>
                             </div>
-                                <h2 class="mx-auto mt-3">Search Event</h2>
+                                <h4 class="mx-auto mt-3">Search Event</h4>
                         </div>
                         <div class="col-12 d-flex flex-column justify-content-center col-md-5 col-12 col-md-5 mb-5 mb-md-0">
                             <div class="icon-2 rounded" style="
@@ -104,7 +100,7 @@ const createAboutUsTemplate = () => `
                                     <span class="iconify" data-icon="uil:bookmark" data-width="100" data-height="100">
                                     </span>
                             </div>
-                                <h2 class="mx-auto mt-3">Bookmark Event</h2>
+                                <h4 class="mx-auto mt-3">Bookmark Event</h4>
                         </div>
                 </div>
                 <hr>

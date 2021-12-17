@@ -29,11 +29,11 @@
 @media (max-width: 1024px) {
 
     .text-name-1 {
-        font-size: 21px;
+        font-size: 1rem;
     }
 
     .text-name-2 {
-        font-size: 20px;
+        font-size: 1rem;
     }
 }
 
@@ -230,11 +230,11 @@
             url('/images/image-3.webp') center center/cover no-repeat;
     }
         .text-name-1 {
-            font-size: 2rem !important;
+            font-size: 1.2rem !important;
         }
 
         .text-name-2 {
-            font-size: 2rem !important;
+            font-size: 1.2rem !important;
         }
 }
 
