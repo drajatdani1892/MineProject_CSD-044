@@ -206,7 +206,9 @@
     .title-page>#textBlog {
         margin-left: 5em !important;
     }
-
+    .nav-link {
+        text-transform: uppercase;
+    }
 }
 
 @media (min-width: 1024px) {

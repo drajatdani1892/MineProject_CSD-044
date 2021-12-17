@@ -15,6 +15,7 @@ const DetailBlog = {
   },
 
   async afterRender() {
+    document.title = 'Mine APP | Detail Blog';
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const { blog } = await BlogDbSource.detailBlog(url.id);
     console.log(blog);

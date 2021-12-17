@@ -25,12 +25,12 @@ const Home = {
          </div>
          <div class="search-box mr-md-3 mb-3 mb-md-0">
             <label for="validationCustom05" tabindex="0">Search</label>
-            <input type="text" class="form-control " id="searchContent" required>
+            <input type="text" class="form-control" id="searchContent" placeholder="Masukan Kata Kunci" required>
             <div class="invalid-feedback">
                Please provide a valid zip.
             </div>
          </div>
-         <button type="button" class="btn btn-primary col-12 col-md-3 btn-search mx-sm-auto">Primary</button>
+         <button type="button" class="btn btn-primary col-12 col-md-3 btn-search mx-sm-auto">Search</button>
       </div>
    </div>
    <div class="card-list"></div>
@@ -39,10 +39,8 @@ const Home = {
   },
 
   async afterRender() {
-    // const homepages = await TheEventDbSource.Home();
-    // console.log(homepages);
-    // const searchContent = document.querySelector('.searchContent');
-    // const getValue = searchContent.value;
+    document.title = 'Mine APP | Home';
+    // search logic
     this._getValue('eventName', '');
     const searchButton = document.querySelector('.btn-search');
     searchButton.addEventListener('click', () => {
@@ -56,9 +54,6 @@ const Home = {
       const result = this._getValue(value, searchInput);
       console.log(result);
     });
-    // homepages.forEach((events) => {
-    //   eventContainer.innerHTML += createEventItemTemplate(events);
-    // });
   },
   async _getValue(category, input) {
     const eventContainer = document.querySelector('.card-list');

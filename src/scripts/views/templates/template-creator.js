@@ -1,6 +1,6 @@
 const createEventItemTemplate = (events) => `
         <div class="card" style="width: 18rem;" tabindex="0">
-                    <img src="${events.images}" class="card-img-top lazyload" alt="${events.eventName}">
+                    <img data-src="${events.images}" class="card-img-top lazyload" alt="${events.eventName}">
                     <div class="card-body">
                         <h5 class="card-title">${events.eventName}</h5>
                         <p class="card-text" style="overflow: hidden;
@@ -33,7 +33,7 @@ const createBlogDetailTemplate = (blog) => `  <div class="contentblog-item">
                         <h2>${blog.createdAt}</h2>
                     </div>
                     <div class="image-content-blog">
-                        <img src="${blog.images}" class="img-fluid lazyload" tabindex="0" alt="">
+                        <img data-src="${blog.images}" class="img-fluid lazyload" tabindex="0" alt="">
                     </div>
                     <div class="text-content-blog" tabindex="0">
                         <p>${blog.content}</p>
@@ -43,7 +43,7 @@ const createBlogDetailTemplate = (blog) => `  <div class="contentblog-item">
 const createEventDetailTemplate = (event) => `
                          <div class="row detail-event-card">
                                 <div class="col-12 col-lg-5 image-detail-event">
-                                    <img src="${event.images}" class="card-img-top img-fluid lazyload" tabindex="0" alt="${event.eventName}">
+                                    <img data-src="${event.images}" class="card-img-top img-fluid lazyload" tabindex="0" alt="${event.eventName}">
                                 </div>
                                 <div class="col-12 col-lg-7 description-detail-event">
                                     <div class="card-body" tabindex="0">
@@ -62,7 +62,7 @@ const createEventDetailTemplate = (event) => `
 const createAboutUsTemplate = () => `
                                       <div class="row about-web mb-5">
                     <div class="col-12 col-md-5 image-detail-event">
-                         <img src="../images/tentang-web.jpeg" class="card-img-top img-fluid lazyload" tabindex="0" alt="...">
+                         <img data-src="../images/tentang-web.jpeg" class="card-img-top img-fluid lazyload" tabindex="0" alt="...">
                     </div>
                     <div class="col-12 col-md-7 description-detail-event">
                         <div class="card-body" tabindex="0">
@@ -110,8 +110,8 @@ const createAboutUsTemplate = () => `
                     </div>
                     <div class="col-12 col-md-9" style="width: 18rem;">
                         <div class="image-team d-flex flex-column flex-lg-row  ">
-                            <img src="../images/zahra.png" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
-                            <img src="../images/zahra.png" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
+                            <img data-src="../images/zahra.png" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
+                            <img data-src="../images/zahra.png" alt="..." class="rounded mb-5 mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
                         </div>
                     </div>
                 </div>`;

@@ -7,10 +7,10 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@iconify/iconify';
 import Swal from 'sweetalert2';
-import App from './views/app';
 import swRegister from './utils/sw-register';
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import App from './views/app';
 
 const app = new App({
   content: document.querySelector('#mainContent'),

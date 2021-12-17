@@ -12,6 +12,7 @@ const AboutUs = {
     `;
   },
   async afterRender() {
+    document.title = 'Mine APP | About Us';
     const aboutus = document.querySelector('.aboutus-container');
     aboutus.innerHTML = createAboutUsTemplate();
   },

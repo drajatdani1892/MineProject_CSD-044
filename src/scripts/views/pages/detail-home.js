@@ -19,6 +19,8 @@ const DetailHome = {
   },
 
   async afterRender() {
+    document.title = 'Mine APP | Detail Home';
+
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const { event } = await TheEventDbSource.detailHome(url.id);
     console.log(event);

@@ -15,9 +15,18 @@ body {
 
 .nav-link {
     font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-right: 1.5em;
     color: white !important;
+}
+
+nav a:hover {
+    color:#DADDFC !important;
+    font-weight: bold;
+}
+
+.nav-item a{
+    padding: 0.9em;
 }
 
 .skip-link {

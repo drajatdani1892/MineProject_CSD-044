@@ -17,6 +17,7 @@ const Blog = {
   },
 
   async afterRender() {
+    document.title = 'Mine APP | Blog';
     const blogs = await BlogDbSource.Blog();
     const blogContainer = document.querySelector('.card-list');
     blogs.forEach((blog) => {
