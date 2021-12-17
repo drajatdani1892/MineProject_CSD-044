@@ -26,6 +26,17 @@
     }
 }
 
+@media (max-width: 1024px) {
+
+    .text-name-1 {
+        font-size: 21px;
+    }
+
+    .text-name-2 {
+        font-size: 20px;
+    }
+}
+
 @media (min-width: 500px){
     .title-page>#textBlog {
         margin-left: 3.5em !important;
@@ -218,6 +229,13 @@
         background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
             url('/images/image-3.webp') center center/cover no-repeat;
     }
+        .text-name-1 {
+            font-size: 2rem !important;
+        }
+
+        .text-name-2 {
+            font-size: 2rem !important;
+        }
 }
 
 
