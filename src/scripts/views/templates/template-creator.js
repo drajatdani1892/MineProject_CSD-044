@@ -79,28 +79,35 @@ const createAboutUsTemplate = () => `
                 <div class="title-page mb-5">
                     <h2 id="textAboutUs" class="d-flex justify-content-center" tabindex="0">Fitur</h2>
                 </div>
-               <div class="row row-cols-1 row-cols-md-2 justify-content-center" style="width: auto;">
-                    <div class="col mb-4" tabindex="0">
-                        <div class="card h-100" style="max-width:30em">
-                            <img src="/images/image-2.jpeg" class="card-img-top lazyload" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                <div class="row row-cols-1 row-cols-md-2 justify-content-around" style="width: auto;">
+                        <div class="col-12 d-flex flex-column justify-content-center col-md-5 col-12 col-md-5 mb-5 mb-md-0">
+                            <div class="icon-1 rounded" style="
+                                 background-color: #2E4C6D;
+                                 height: 15em;
+                                 color: white;
+                                 display: flex;
+                                 justify-content: center;
+                                 align-items: center;">
+                                    <span class="iconify" data-icon="uil:search" data-width="100" data-height="100">
+                                    </span>
                             </div>
+                                <h2 class="mx-auto mt-3">Search Event</h2>
                         </div>
-                    </div>
-                    <div class="col mb-4" tabindex="0">
-                        <div class="card h-100" style="max-width:30em">
-                             <img src="/images/image-2.jpeg" class="card-img-top lazyload" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a short card.</p>
+                        <div class="col-12 d-flex flex-column justify-content-center col-md-5 col-12 col-md-5 mb-5 mb-md-0">
+                            <div class="icon-2 rounded" style="
+                                 background-color: #2E4C6D;
+                                 height: 15em;
+                                 color: white;
+                                 display: flex;
+                                 justify-content: center;
+                                 align-items: center;">
+                                    <span class="iconify" data-icon="uil:bookmark" data-width="100" data-height="100">
+                                    </span>
                             </div>
+                                <h2 class="mx-auto mt-3">Bookmark Event</h2>
                         </div>
-                    </div>
                 </div>
+
                 <hr>
                 <div class="row">
                     <div class="col-12 col-md-3 d-flex align-items-center">
