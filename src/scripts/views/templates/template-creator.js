@@ -1,9 +1,9 @@
 const createEventItemTemplate = (events) => `
         <div class="card" style="width: 18rem;" tabindex="0">
-                    <img data-src="${events.images}" class="card-img-top lazyload" alt="${events.eventName}">
+                    <img data-src="${events.images}" class="card-img-top lazyload" tabindex="0" alt="${events.eventName}">
                     <div class="card-body">
-                        <h5 class="card-title">${events.eventName}</h5>
-                        <p class="card-text" style="overflow: hidden;
+                        <h5 class="card-title" tabindex="0">${events.eventName}</h5>
+                        <p class="card-text" tabindex="0" style="overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -29,14 +29,14 @@ const createBlogItemTemplate = (blogs) => ` <div class="card bg-dark text-white 
 ;
 const createBlogDetailTemplate = (blog) => `  <div class="contentblog-item">
                     <div class="title-content-blog">
-                        <h1>${blog.title}</h1>
-                        <h2>${blog.createdAt}</h2>
+                        <h1 tabindex="0">${blog.title}</h1>
+                        <h2 tabindex="0">${blog.createdAt}</h2>
                     </div>
                     <div class="image-content-blog">
                         <img data-src="${blog.images}" class="img-fluid lazyload" tabindex="0" alt="">
                     </div>
                     <div class="text-content-blog" tabindex="0">
-                        <p>${blog.content}</p>
+                        <p tabindex="0">${blog.content}</p>
                     </div>
                 </div>`;
 ;
@@ -47,14 +47,14 @@ const createEventDetailTemplate = (event) => `
                                 </div>
                                 <div class="col-12 col-lg-7 description-detail-event">
                                     <div class="card-body" tabindex="0">
-                                        <h2 class="card-title">${event.eventName}</h2>
+                                        <h2 class="card-title" tabindex="0">${event.eventName}</h2>
                                         <p class="card-text" styles="overflow: hidden;
                                         text-overflow: ellipsis;
                                         display: -webkit-box;
                                         -webkit-line-clamp: 3;
-                                        -webkit-box-orient: vertical;" >${event.deskripsi}</p>
-                                        <p class="card-text"><small class="text-primary"><b>Artist</b> : ${event.artist}</small></p>
-                                        <p class="card-text"><small class="text-danger"><b>Start Date Time</b> : ${event.startDate}</small></p>
+                                        -webkit-box-orient: vertical;" tabindex="0">${event.deskripsi}</p>
+                                        <p class="card-text"><small class="text-primary" tabindex="0"><b>Artist</b> : ${event.artist}</small></p>
+                                        <p class="card-text"><small class="text-danger" tabindex="0"><b>Start Date Time</b> : ${event.startDate}</small></p>
                                     </div>
                                 </div>
                             </div>`;
@@ -77,7 +77,7 @@ const createAboutUsTemplate = () => `
                 </div>
                 <div class="row row-cols-1 row-cols-md-2 justify-content-around" style="width: auto;">
                         <div class="col-12 d-flex flex-column justify-content-center col-md-5 col-12 col-md-5 mb-5 mb-md-0">
-                            <div class="icon-1 rounded" style="
+                            <div class="icon-1 rounded" tabindex="0" style="
                                  background-color: #2E4C6D;
                                  height: 15em;
                                  color: white;
@@ -87,10 +87,10 @@ const createAboutUsTemplate = () => `
                                     <span class="iconify" data-icon="uil:search" data-width="100" data-height="100">
                                     </span>
                             </div>
-                                <h4 class="mx-auto mt-3">Search Event</h4>
+                                <h4 class="mx-auto mt-3" tabindex="0">Search Event</h4>
                         </div>
                         <div class="col-12 d-flex flex-column justify-content-center col-md-5 col-12 col-md-5 mb-5 mb-md-0">
-                            <div class="icon-2 rounded" style="
+                            <div class="icon-2 rounded" tabindex="0" style="
                                  background-color: #2E4C6D;
                                  height: 15em;
                                  color: white;
@@ -100,7 +100,7 @@ const createAboutUsTemplate = () => `
                                     <span class="iconify" data-icon="uil:bookmark" data-width="100" data-height="100">
                                     </span>
                             </div>
-                                <h4 class="mx-auto mt-3">Bookmark Event</h4>
+                                <h4 class="mx-auto mt-3" tabindex="0">Bookmark Event</h4>
                         </div>
                 </div>
                 <hr>
@@ -115,13 +115,13 @@ const createAboutUsTemplate = () => `
                         <div class="image-2 rounded d-flex justify-content-center"> 
                             <img data-src="../images/zahra.png" alt="..." class="rounded mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
                         </div>    
-                            <h5 class="text-name-1 mx-auto mt-3">Zahra Elgysha N</h5>
+                            <h5 class="text-name-1 mx-auto mt-3" tabindex="0">Zahra Elgysha N</h5>
                         </div>
                         <div class="col-12 d-flex flex-column justify-content-center col-md-5 col-12 col-md-5 mb-5 mb-md-0">
                             <div class="image-2 rounded d-flex justify-content-center"> 
                                 <img data-src="../images/drajat.jpeg" alt="..." class="rounded mb-md-2 lazyload" tabindex="0" style="max-width: 15em">
                             </div>
-                            <h5 class="text-name-2 mx-auto mt-3">Muhammad Drajat R</h5>
+                            <h5 class="text-name-2 mx-auto mt-3" tabindex="0">Muhammad Drajat R</h5>
                         </div>
                     </div>
                 </div>`;

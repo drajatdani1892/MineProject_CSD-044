@@ -25,6 +25,12 @@ window.addEventListener('load', () => {
   swRegister();
 });
 
+const maincontent = document.querySelector('#mainContent');
+const buttonskip = document.querySelector('.skip-link');
+buttonskip.addEventListener('click', () => {
+  maincontent.focus();
+});
+
 window.addEventListener('offline', () => {
   Swal.fire({
     icon: 'error',
