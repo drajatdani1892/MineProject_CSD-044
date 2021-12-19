@@ -47,9 +47,7 @@ const Home = {
       const eventContainer = document.querySelector('.card-list');
       const select = document.getElementById('categorySelect');
       const { value } = select.options[select.selectedIndex];
-      console.log(value);
       const searchInput = document.querySelector('#searchContent').value;
-      console.log(searchInput);
       eventContainer.innerHTML = '';
       const result = this._getValue(value, searchInput);
       console.log(result);
@@ -58,7 +56,6 @@ const Home = {
   async _getValue(category, input) {
     const eventContainer = document.querySelector('.card-list');
     const event = await TheEventDbSource.search(category, input);
-    console.log(event);
     event.events.forEach((events) => {
       eventContainer.innerHTML += createEventItemTemplate(events);
     });

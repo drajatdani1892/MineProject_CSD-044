@@ -23,7 +23,6 @@ const DetailHome = {
 
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const { event } = await TheEventDbSource.detailHome(url.id);
-    console.log(event);
     const eventContainer = document.querySelector('.detail-event-container');
     eventContainer.innerHTML = createEventDetailTemplate(event);
 

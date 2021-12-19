@@ -36,6 +36,6 @@ window.addEventListener('offline', () => {
     icon: 'error',
     title: 'Oops...',
     text: 'Your Internet is Offline!',
-    footer: '<a href="">Why do I have this issue?</a>',
+    footer: 'Copyright &copy; Capstopne 2021 - CSD044',
   });
 });

@@ -9,13 +9,11 @@ class TheEventDbSource {
 
   static async detailHome(id) {
     const response = await fetch(API_ENDPOINT.DETAILHOME(id));
-    console.log(response);
     return response.json();
   }
 
   static async search(category, artist) {
     const response = await fetch(API_ENDPOINT.SEARCH(category, artist));
-    console.log(response);
     return response.json();
   }
 }
