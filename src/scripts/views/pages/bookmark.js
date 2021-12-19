@@ -19,7 +19,7 @@ const Bookmark = {
     document.title = 'Mine APP | Bookmark';
     const homepages = await favoriteEventidb.getAllEvents();
     const eventContainer = document.querySelector('.card-list');
-    if (homepages > 0) {
+    if (homepages.length > 0) {
       homepages.forEach((events) => {
         eventContainer.innerHTML += createEventItemTemplate(events);
       });
