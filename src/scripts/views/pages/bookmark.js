@@ -18,11 +18,21 @@ const Bookmark = {
   async afterRender() {
     document.title = 'Mine APP | Bookmark';
     const homepages = await favoriteEventidb.getAllEvents();
-    console.log(homepages);
     const eventContainer = document.querySelector('.card-list');
-    homepages.forEach((events) => {
-      eventContainer.innerHTML += createEventItemTemplate(events);
-    });
+    if (homepages > 0) {
+      homepages.forEach((events) => {
+        eventContainer.innerHTML += createEventItemTemplate(events);
+      });
+    } else {
+      this._renderEmpty();
+    }
+  },
+
+  _renderEmpty() {
+    const mainContent = document.querySelector('#mainContent');
+    mainContent.innerHTML += `
+      <p tabindex="0" class="alert d-flex justify-content-center align-items-center" style="font-weight: bold;border-bottom-color:#2E4C6D;">Data Kosong</p>
+    `;
   },
 };
 
