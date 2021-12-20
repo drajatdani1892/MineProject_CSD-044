@@ -1,6 +1,6 @@
 const createEventItemTemplate = (events) => `
         <div class="card" style="width: 18rem;" tabindex="0">
-                    <img data-src="${events.images}" class="card-img-top lazyload" tabindex="0" alt="${events.eventName}">
+                    <img data-src="${events.images}" class="card-img-top lazyload" tabindex="0" style="max-width: 100%;max-height: 50%;object-fit: cover;" alt="${events.eventName}">
                     <div class="card-body">
                         <h5 class="card-title" tabindex="0">${events.eventName}</h5>
                         <p class="card-text" tabindex="0" style="overflow: hidden;
