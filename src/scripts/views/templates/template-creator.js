@@ -1,6 +1,6 @@
 const createEventItemTemplate = (events) => `
         <div class="card" style="width: 18rem;" tabindex="0">
-                    <img data-src="${events.images}" class="card-img-top lazyload" tabindex="0" style="max-width: 100%;max-height: 40%;object-fit: cover;" alt="${events.eventName}">
+                    <img data-src="${events.images}" class="card-img-top lazyload" tabindex="0" style="max-width: 100%;max-height: 50%;object-fit: cover;" alt="${events.eventName}">
                     <div class="card-body">
                         <h5 class="card-title" tabindex="0">${events.eventName}</h5>
                         <p class="card-text" tabindex="0" style="overflow: hidden;
@@ -8,7 +8,7 @@ const createEventItemTemplate = (events) => `
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;" >${events.deskripsi}</p>
-                        <a href="/#/detail-home/${events.id}" class="btn btn-primary" tabindex="0">Go Detail</a>
+                        <a href="/#/detail-home/${events.id}" class="btn btn-primary" tabindex="0">Go somewhere</a>
                     </div>
                 </div>`;
 
