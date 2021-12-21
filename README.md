@@ -51,4 +51,4 @@ Daftar API dan Library yang digunakan :
 ## Tim Pengembang
 
 - [Muhammad Drajat R](https://github.com/drajatdani1892)
-- [Zahra Elgysha N](https://github.com/drajatdani1892)
+- [Zahra Elgysha N](https://github.com/zahraeln)
