@@ -65,7 +65,7 @@ const Home = {
     }
   },
   _renderEmpty() {
-    const mainContent = document.querySelector('#mainContent');
+    const mainContent = document.querySelector('.card-list');
     mainContent.innerHTML += `
       <div class="alert alert-danger" role="alert">
          Data yang anda cari tidak ada!
