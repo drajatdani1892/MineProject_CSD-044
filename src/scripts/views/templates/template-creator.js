@@ -14,14 +14,14 @@ const createEventItemTemplate = (events) => `
 
 const createBlogItemTemplate = (blogs) => ` <div class="card bg-dark text-white lazyload" style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
                     url('${blogs.images}') center center/cover no-repeat; width: 18rem;" tabindex="0">
-                    <div class="card-body" tabindex="0">
+                    <div class="card-body d-flex flex-column" tabindex="0">
                         <h5 class="card-title">${blogs.title}</h5>
                         <p class="card-text" style="overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;">${blogs.content}</p>
-                        <a href="/#/detail-blog/${blogs.id}" class="btn btn-primary"
+                        <a href="/#/detail-blog/${blogs.id}" class="btn btn-primary mt-auto"
                             style="background: #2E4C6D; border-radius: 5px;" tabindex="0">Go
                             Detail</a>
                     </div>
