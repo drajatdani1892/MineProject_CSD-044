@@ -16,7 +16,7 @@ const Home = {
             <label for="validationCustom04" tabindex="0">Category</label>
             <select class="custom-select" id="categorySelect" tabindex="0" required>
                <option selected disabled value="">Select</option>
-               <option disabled>All</option>
+               <option value="eventName">All</option>
                <option value="artist">Artist</option>
                <option value="genre">Genre</option>
                <option value="venue">Venue</option>
@@ -56,9 +56,21 @@ const Home = {
   async _getValue(category, input) {
     const eventContainer = document.querySelector('.card-list');
     const event = await TheEventDbSource.search(category, input);
-    event.events.forEach((events) => {
-      eventContainer.innerHTML += createEventItemTemplate(events);
-    });
+    if (event.events.length > 0) {
+      event.events.forEach((events) => {
+        eventContainer.innerHTML += createEventItemTemplate(events);
+      });
+    } else {
+      this._renderEmpty();
+    }
+  },
+  _renderEmpty() {
+    const mainContent = document.querySelector('#mainContent');
+    mainContent.innerHTML += `
+      <div class="alert alert-danger" role="alert">
+         Data yang anda cari tidak ada!
+      </div>
+    `;
   },
 };
 

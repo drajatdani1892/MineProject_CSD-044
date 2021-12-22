@@ -31,7 +31,9 @@ const Bookmark = {
   _renderEmpty() {
     const mainContent = document.querySelector('#mainContent');
     mainContent.innerHTML += `
-      <p tabindex="0" class="alert d-flex justify-content-center align-items-center" style="font-weight: bold;border-bottom-color:#2E4C6D;">Data Kosong</p>
+      <div class="alert alert-danger" role="alert">
+         Data Bookmark tidak ada!
+      </div>
     `;
   },
 };
