@@ -13,7 +13,7 @@ Pandemi covid-19 menyebabkan bidang esensial maupun non-esensial di seluruh duni
    `git clone '[https://github.com/drajatdani1892/MineProject_CSD-044.git]' `
 3. Buka folder projek dan buka terminal atau CMD
 4. Ketik perintah `npm run i` untuk menginstall package yang dibutuhkan
-5. Ketikan perintah `npm run build` & `npm run build-image` untuk menjalankan aplikasi dalam mode environtment production
+5. Ketikan perintah `npm run build-prod` untuk menjalankan aplikasi dalam mode environtment production
 6. Ketikkan perintah `npm run start-dev` untuk menjalankan aplikasi dalam mode environment development
 
 ## Fitur
