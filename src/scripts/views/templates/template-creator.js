@@ -8,7 +8,7 @@ const createEventItemTemplate = (events) => `
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;" >${events.deskripsi}</p>
-                        <a href="/#/detail-home/${events.id}" class="btn btn-primary" tabindex="0">Go somewhere</a>
+                        <a href="/#/detail-home/${events.id}" class="btn btn-primary" tabindex="0">Go Detail</a>
                     </div>
                 </div>`;
 
