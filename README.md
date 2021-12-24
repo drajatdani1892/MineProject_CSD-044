@@ -30,8 +30,8 @@ Daftar API dan Library yang digunakan :
 
 ### API & Library
 
-- [Event Data API Built using MockAPI](https://mockapi.io/projects/61b0a1fe3c954f001722a524)
-- [Blog Data API Built using MockAPI](https://mockapi.io/projects/61b0a1fe3c954f001722a524)
+- [Event Data API Built using MockAPI](https://61b0a1fe3c954f001722a523.mockapi.io/musicEvent)
+- [Blog Data API Built using MockAPI](https://61b0a1fe3c954f001722a523.mockapi.io/blogcontent)
 - [SweetAlert2](https://www.npmjs.com/package/sweetalert2)
 - [Bootstrap 4](https://www.npmjs.com/package/bootstrap)
 - [Lazysizes](https://www.npmjs.com/package/lazysizes)
